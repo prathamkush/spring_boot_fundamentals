@@ -8,7 +8,7 @@ _REST Service_ :
 Client -> HTTP -> Request -> REST Interface -> Application Logic -> JSON Converted JSON -> Response -> Tomcat Server -> HTTP
 
 
-**_SPRING BOOT CONTAINER_**
+<h1> **_SPRING BOOT CONTAINER_** </h1>
 
 **Dependencies**
 
@@ -27,18 +27,18 @@ Client -> HTTP -> Request -> REST Interface -> Application Logic -> JSON Convert
 
 
 
-**_Application Layering**_
+**_Application Layering_**
 
 WEB LAYER
 
 => @SpringBootApplication
 => @ComponentScan, @Configuration
 
-=> @RestController
-=> @GetMapping
-=> getAllMovies()
-=> return ArrayList
-=> toJson()
+=> @RestController 
+    => @GetMapping
+        => getAllMovies()
+            => return ArrayList
+                => toJson()
 
 => Client => Tomcat Server => localhost:8080
 
@@ -47,8 +47,6 @@ SERVICE LAYER
 DAO LAYER
 
 DATABASE
-
-
 
 DEVELOPER TOOLS
 
@@ -62,4 +60,8 @@ SPRING FRAMEWORK
 
 1. Spring MVC
 2. Spring Boot
+
+![This is an image](src/images/0.png)
+![This is an image](src/images/2.png)
+![This is an image](src/images/3.png)
 
